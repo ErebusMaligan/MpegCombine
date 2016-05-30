@@ -1,0 +1,7 @@
+<project name="MpegCombiner" basedir=".">
+	<property name="CommonBuild" value="../ant/common.ant"/> 
+	<property name="this.project" value="${ant.project.name}" />
+	<property name="main-class"		value="app.MpegCombiner" />
+	<ant target="jar" antfile="${CommonBuild}" inheritAll="true"/>
+	<ant target="deployed" antfile="${CommonBuild}" inheritAll="true"/>
+</project>
